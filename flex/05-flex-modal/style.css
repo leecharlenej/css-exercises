@@ -1,3 +1,7 @@
+/* My solution:
+- Used close-button margin-left: auto instead of header justify-content: space-between. 
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html, body {
@@ -20,6 +24,9 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  padding: 10px;
+  gap: 10px;
 }
 
 .icon {
@@ -33,6 +40,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.header {
+  font-size: large;
+  font-weight: bold;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
 }
 
 .close-button {
@@ -48,6 +64,12 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  margin-left: auto;
+
+}
+
+.text{
+  margin-bottom: 10px;
 }
 
 button {
